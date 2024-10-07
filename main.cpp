@@ -35,7 +35,7 @@ int main (int argc, char* argv[])
     string inputString = "";
     int input = 0;
     bool filled = false;
-    while(input){ //loops menu
+    while(input != 5){ //loops menu
         cout << "==== Main Menu ==== \n1. Populate Hash Table (Only call this once!) \n2. Search for Course \n3. Search for Professor \n4. Display all Courses \n5. Exit" <<endl;
         getline(cin,inputString); //getline used for every input, standardized input stream
         try{input = stoi(inputString);} //handles stoi exceptions
